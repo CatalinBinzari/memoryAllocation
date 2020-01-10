@@ -4,7 +4,6 @@
 
 int main() 
 {
-    // allocates enough for an array of 4 strings
     auto p = (std::string*)std::malloc(sizeof(std::string));
     new(p) std::string(5, 'a');
     //new(p+1) std::string(5, 'b'); //error not enough memory
